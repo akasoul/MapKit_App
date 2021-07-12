@@ -11,6 +11,14 @@
 		314630202696FCA40008B7F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146301F2696FCA40008B7F4 /* ContentView.swift */; };
 		314630222696FCA60008B7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314630212696FCA60008B7F4 /* Assets.xcassets */; };
 		314630252696FCA60008B7F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314630242696FCA60008B7F4 /* Preview Assets.xcassets */; };
+		3146302E2696FCC00008B7F4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146302D2696FCC00008B7F4 /* MapView.swift */; };
+		314630302696FD710008B7F4 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146302F2696FD710008B7F4 /* MapViewModel.swift */; };
+		31ED8AD526971B2F00E9B4E6 /* test.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 3163EEA12697165C00E70A6E /* test.geojson */; };
+		31ED8AD7269758B500E9B4E6 /* MapViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED8AD6269758B500E9B4E6 /* MapViewWrapper.swift */; };
+		31ED8ADA269832F600E9B4E6 /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED8AD9269832F600E9B4E6 /* Geo.swift */; };
+		31ED8ADE2699C87400E9B4E6 /* AddRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED8ADD2699C87400E9B4E6 /* AddRouteView.swift */; };
+		31ED8AE02699C88100E9B4E6 /* AddRouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED8ADF2699C88100E9B4E6 /* AddRouteViewModel.swift */; };
+		31FD7215269B19E100C333CD /* russia.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 31FD7214269B19E100C333CD /* russia.geojson */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		314630212696FCA60008B7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		314630242696FCA60008B7F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		314630262696FCA60008B7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3146302D2696FCC00008B7F4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3146302F2696FD710008B7F4 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		3163EEA12697165C00E70A6E /* test.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.geojson; sourceTree = "<group>"; };
+		31ED8AD6269758B500E9B4E6 /* MapViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewWrapper.swift; sourceTree = "<group>"; };
+		31ED8AD9269832F600E9B4E6 /* Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
+		31ED8ADD2699C87400E9B4E6 /* AddRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRouteView.swift; sourceTree = "<group>"; };
+		31ED8ADF2699C88100E9B4E6 /* AddRouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRouteViewModel.swift; sourceTree = "<group>"; };
+		31FD7214269B19E100C333CD /* russia.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = russia.geojson; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +68,13 @@
 		3146301C2696FCA40008B7F4 /* WAADSU_TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				3163EEA12697165C00E70A6E /* test.geojson */,
+				31FD7214269B19E100C333CD /* russia.geojson */,
 				3146301D2696FCA40008B7F4 /* WAADSU_TestAppApp.swift */,
 				3146301F2696FCA40008B7F4 /* ContentView.swift */,
+				31FD7216269B1B8D00C333CD /* Structs */,
+				31ED8ADC2699C84200E9B4E6 /* AddRouteView */,
+				3146302C2696FCB30008B7F4 /* MapView */,
 				314630212696FCA60008B7F4 /* Assets.xcassets */,
 				314630262696FCA60008B7F4 /* Info.plist */,
 				314630232696FCA60008B7F4 /* Preview Content */,
@@ -67,6 +88,33 @@
 				314630242696FCA60008B7F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3146302C2696FCB30008B7F4 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				3146302D2696FCC00008B7F4 /* MapView.swift */,
+				3146302F2696FD710008B7F4 /* MapViewModel.swift */,
+				31ED8AD6269758B500E9B4E6 /* MapViewWrapper.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		31ED8ADC2699C84200E9B4E6 /* AddRouteView */ = {
+			isa = PBXGroup;
+			children = (
+				31ED8ADD2699C87400E9B4E6 /* AddRouteView.swift */,
+				31ED8ADF2699C88100E9B4E6 /* AddRouteViewModel.swift */,
+			);
+			path = AddRouteView;
+			sourceTree = "<group>";
+		};
+		31FD7216269B1B8D00C333CD /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				31ED8AD9269832F600E9B4E6 /* Geo.swift */,
+			);
+			path = Structs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +174,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31FD7215269B19E100C333CD /* russia.geojson in Resources */,
 				314630252696FCA60008B7F4 /* Preview Assets.xcassets in Resources */,
 				314630222696FCA60008B7F4 /* Assets.xcassets in Resources */,
+				31ED8AD526971B2F00E9B4E6 /* test.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31ED8ADA269832F600E9B4E6 /* Geo.swift in Sources */,
 				314630202696FCA40008B7F4 /* ContentView.swift in Sources */,
+				31ED8AD7269758B500E9B4E6 /* MapViewWrapper.swift in Sources */,
+				3146302E2696FCC00008B7F4 /* MapView.swift in Sources */,
 				3146301E2696FCA40008B7F4 /* WAADSU_TestAppApp.swift in Sources */,
+				31ED8ADE2699C87400E9B4E6 /* AddRouteView.swift in Sources */,
+				31ED8AE02699C88100E9B4E6 /* AddRouteViewModel.swift in Sources */,
+				314630302696FD710008B7F4 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
